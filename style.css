@@ -162,6 +162,7 @@ header::after{
 }
 
 .menu .boite a{
+    display: none;
     text-decoration: none;
     color: transparent;
     font-size: x-large;
@@ -192,6 +193,7 @@ header::after{
 }
 
 .checkbox:checked ~ .menu .boite a{
+    display: flex;
     color: black;
 }
 
@@ -350,6 +352,12 @@ header::after{
 }
 
 #cv .boite_gauche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cv .boite_gauche .haut{
     background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     opacity: 0.75;
@@ -373,6 +381,26 @@ header::after{
 
 #cv .boite_gauche .deux a:hover{
     color: red;
+}
+
+#cv .boite_gauche .bas{
+    margin-top: 50px;
+}
+
+#cv .boite_gauche .bas a{
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#cv .boite_gauche .bas a:hover{
+    background-color: red;
+    color: white;
 }
 
 #cv iframe{
