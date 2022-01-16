@@ -540,8 +540,8 @@ header::after{
 
 #cv iframe{
     width: 100%;
-    height: 100%;
-    aspect-ratio: 22.3/29.7;
+    height: auto;
+    aspect-ratio: 22.4/29.7;
 }
 
 /* ////////// CORPS - CONTACT ////////// */
