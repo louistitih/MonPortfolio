@@ -229,7 +229,6 @@ header::after{
 
 #présentation{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -259,7 +258,7 @@ header::after{
     left: 60%;
 }
 
-#présentation .boite_un{
+#présentation .boite{
     margin: 25px;
     background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -268,145 +267,21 @@ header::after{
     padding: 15px;
 }
 
-#présentation .boite_un .un{
+#présentation .boite .un{
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-#présentation .boite_un .deux{
+#présentation .boite .deux{
     font-size: small;
-}
-
-#présentation .boite_deux, #présentation .boite_trois{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#présentation .boite_deux .gauche{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    max-width: 50%;
-    margin: 25px;
-}
-
-#présentation .boite_deux .gauche .un{
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#présentation .boite_deux .gauche .deux{
-    font-size: small;
-}
-
-#présentation .boite_deux .droite{
-    width: 150px;
-    height: 150px;
-    background: url(img/cafe.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
-}
-
-#présentation .boite_trois .gauche{
-    width: 150px;
-    height: 150px;
-    background: url(img/velo.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
-}
-
-#présentation .boite_trois .droite{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    max-width: 50%;
-    margin: 25px;
-}
-
-#présentation .boite_trois .droite .un{
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#présentation .boite_trois .droite .deux{
-    font-size: small;
-}
-
-#présentation .boite_quatre{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#présentation .boite_quatre .haut{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 25px;
-}
-
-#présentation .boite_quatre .haut .un{
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#présentation .boite_quatre .haut .deux{
-    font-size: small;
-}
-
-#présentation .boite_quatre .bas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#présentation .boite_quatre .bas .gauche{
-    width: 150px;
-    height: 150px;
-    background: url(img/vin.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
-}
-
-#présentation .boite_quatre .bas .droite{
-    width: 150px;
-    height: 150px;
-    background: url(img/biere.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
 }
 
 /* ////////// CORPS - BLOG ////////// */
 
 #blog{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
     position: relative;
@@ -434,7 +309,205 @@ header::after{
     left: 60%;
 }
 
-#blog .boite{
+#blog .intro{
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
+}
+
+#blog .intro .un{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#blog .intro .deux{
+    font-size: small;
+}
+
+#blog .boite_un{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#blog .boite_un .bas .droite{
+    width: 250px;
+    height: 250px;
+    background: url(img/cafe.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    margin: 25px;
+}
+
+#blog .boite_un .bas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#blog .boite_un .haut{
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
+}
+
+#blog .boite_un .haut .un{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#blog .boite_un .haut .deux{
+    font-size: small;
+}
+
+#blog .boite_un .bas .gauche{
+    margin: 25px;
+}
+
+#blog .boite_un .bas .gauche a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
+    border-radius: 10px;
+    padding: 15px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#blog .boite_un .bas .gauche a:hover{
+    background-color: red;
+    color: white;
+}
+
+#blog .boite_deux{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#blog .boite_deux .haut{
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
+}
+
+#blog .boite_deux .haut .un{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#blog .boite_deux .haut .deux{
+    font-size: small;
+}
+
+#blog .boite_deux .bas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#blog .boite_deux .bas .photo_un{
+    width: 250px;
+    height: 250px;
+    background: url(img/velo_route.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    margin: 25px;
+}
+
+#blog .boite_deux .bas .photo_deux{
+    width: 250px;
+    height: 250px;
+    background: url(img/velo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    margin: 25px;
+}
+
+#blog .boite_trois{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#blog .boite_trois .haut{
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
+}
+
+#blog .boite_trois .haut .un{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#blog .boite_trois .haut .deux{
+    font-size: small;
+}
+
+#blog .boite_trois .bas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#blog .boite_trois .bas .gauche{
+    width: 250px;
+    height: 250px;
+    background: url(img/vin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    margin: 25px;
+}
+
+#blog .boite_trois .bas .droite{
+    width: 250px;
+    height: 250px;
+    background: url(img/biere.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    margin: 25px;
+}
+
+#blog .boite_quatre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#blog .boite_quatre .gauche{
     margin: 25px;
     background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -443,12 +516,12 @@ header::after{
     padding: 15px;
 }
 
-#blog .boite .un{
+#blog .boite_quatre .gauche .un{
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-#blog .boite .deux{
+#blog .boite_quatre .gauche .deux{
     font-size: small;
 }
 
@@ -467,266 +540,6 @@ header::after{
 .slides img{
     float: left;
     width: 250px;
-}
-
-/*@keyframes défilement{
-    0%{
-        transform: translateX(0);
-    }
-
-    99%{
-        transform: translateX(-7750px);
-    }
-
-    100%{
-        transform: translateX(0);
-    }
-}
-
-/*@keyframes défilement {
-    0% {
-        transform: translateX(0);
-    }
-
-    1.5% {
-        transform: translateX(0);
-    }
-
-    3% {
-        transform: translateX(-250px);
-    }
-
-    4.5% {
-        transform: translateX(-250px);
-    }
-
-    6% {
-        transform: translateX(-500px);
-    }
-
-    7.5% {
-        transform: translateX(-500px);
-    }
-
-    9% {
-        transform: translateX(-750px);
-    }
-
-    10.5% {
-        transform: translateX(-750px);
-    }
-
-    12% {
-        transform: translateX(-1000px);
-    }
-
-    13.5% {
-        transform: translateX(-1000px);
-    }
-
-    15% {
-        transform: translateX(-1250px);
-    }
-
-    16.5% {
-        transform: translateX(-1250px);
-    }
-
-    18% {
-        transform: translateX(-1500px);
-    }
-
-    19.5% {
-        transform: translateX(-1500px);
-    }
-
-    21% {
-        transform: translateX(-1750px);
-    }
-
-    22.5% {
-        transform: translateX(-1750px);
-    }
-
-    24% {
-        transform: translateX(-2000px);
-    }
-
-    25.5% {
-        transform: translateX(-2000px);
-    }
-
-    27% {
-        transform: translateX(-2250px);
-    }
-
-    28.5% {
-        transform: translateX(-2250px);
-    }
-
-    30% {
-        transform: translateX(-2500px);
-    }
-
-    31.5% {
-        transform: translateX(-2500px);
-    }
-
-    33% {
-        transform: translateX(-2750px);
-    }
-
-    33% {
-        transform: translateX(-2750px);
-    }
-
-    34.5% {
-        transform: translateX(-2250px);
-    }
-
-    36% {
-        transform: translateX(-2250px);
-    }
-
-    37.5% {
-        transform: translateX(-2500px);
-    }
-
-    39% {
-        transform: translateX(-2500px);
-    }
-
-    40.5% {
-        transform: translateX(-2750px);
-    }
-
-    42% {
-        transform: translateX(-2750px);
-    }
-
-    43.5% {
-        transform: translateX(0);
-    }
-
-    45% {
-        transform: translateX(0);
-    }
-
-    46.5% {
-        transform: translateX(-250px);
-    }
-
-    48% {
-        transform: translateX(-250px);
-    }
-
-    49.5% {
-        transform: translateX(-500px);
-    }
-
-    51% {
-        transform: translateX(-500px);
-    }
-
-    52.5% {
-        transform: translateX(-750px);
-    }
-
-    10.5% {
-        transform: translateX(-750px);
-    }
-
-    12% {
-        transform: translateX(-1000px);
-    }
-
-    13.5% {
-        transform: translateX(-1000px);
-    }
-
-    15% {
-        transform: translateX(-1250px);
-    }
-
-    16.5% {
-        transform: translateX(-1250px);
-    }
-
-    18% {
-        transform: translateX(-1500px);
-    }
-
-    19.5% {
-        transform: translateX(-1500px);
-    }
-
-    21% {
-        transform: translateX(-1750px);
-    }
-
-    22.5% {
-        transform: translateX(-1750px);
-    }
-
-    24% {
-        transform: translateX(-2000px);
-    }
-
-    25.5% {
-        transform: translateX(-2000px);
-    }
-
-    27% {
-        transform: translateX(-2250px);
-    }
-
-    28.5% {
-        transform: translateX(-2250px);
-    }
-
-    30% {
-        transform: translateX(-2500px);
-    }
-
-    31.5% {
-        transform: translateX(-2500px);
-    }
-
-    33% {
-        transform: translateX(-2750px);
-    }
-
-    33% {
-        transform: translateX(-2750px);
-    }
-
-    27% {
-        transform: translateX(-2250px);
-    }
-
-    28.5% {
-        transform: translateX(-2250px);
-    }
-
-    30% {
-        transform: translateX(-2500px);
-    }
-
-    31.5% {
-        transform: translateX(-2500px);
-    }
-
-    33% {
-        transform: translateX(-2750px);
-    }
-
-    33% {
-        transform: translateX(-2750px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
 }
 
 /* ////////// CORPS - CV ////////// */
@@ -766,6 +579,7 @@ header::after{
 #cv .boite_gauche{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -785,15 +599,6 @@ header::after{
 
 #cv .boite_gauche .deux{
     font-size: small;
-}
-
-#cv .boite_gauche .deux a{
-    color: black;
-    transition: color 0.5s;
-}
-
-#cv .boite_gauche .deux a:hover{
-    color: red;
 }
 
 #cv .boite_gauche .bas{
