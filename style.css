@@ -331,6 +331,11 @@ header::after{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
 }
 
 #blog .boite_un .bas .droite{
@@ -394,6 +399,11 @@ header::after{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
 }
 
 #blog .boite_deux .haut{
@@ -449,6 +459,11 @@ header::after{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
 }
 
 #blog .boite_trois .haut{
@@ -505,6 +520,11 @@ header::after{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
 }
 
 #blog .boite_quatre .gauche{
@@ -581,6 +601,11 @@ header::after{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
 }
 
 #cv .boite_gauche .haut{
