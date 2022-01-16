@@ -443,8 +443,290 @@ header::after{
     padding: 15px;
 }
 
-#blog .boite p{
+#blog .boite .un{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#blog .boite .deux{
     font-size: small;
+}
+
+.slider{
+    overflow: auto;
+    width: 250px;
+    margin: 25px auto;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.slides{
+    width: calc(250px * 32);
+}
+
+.slides img{
+    float: left;
+    width: 250px;
+}
+
+/*@keyframes défilement{
+    0%{
+        transform: translateX(0);
+    }
+
+    99%{
+        transform: translateX(-7750px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*@keyframes défilement {
+    0% {
+        transform: translateX(0);
+    }
+
+    1.5% {
+        transform: translateX(0);
+    }
+
+    3% {
+        transform: translateX(-250px);
+    }
+
+    4.5% {
+        transform: translateX(-250px);
+    }
+
+    6% {
+        transform: translateX(-500px);
+    }
+
+    7.5% {
+        transform: translateX(-500px);
+    }
+
+    9% {
+        transform: translateX(-750px);
+    }
+
+    10.5% {
+        transform: translateX(-750px);
+    }
+
+    12% {
+        transform: translateX(-1000px);
+    }
+
+    13.5% {
+        transform: translateX(-1000px);
+    }
+
+    15% {
+        transform: translateX(-1250px);
+    }
+
+    16.5% {
+        transform: translateX(-1250px);
+    }
+
+    18% {
+        transform: translateX(-1500px);
+    }
+
+    19.5% {
+        transform: translateX(-1500px);
+    }
+
+    21% {
+        transform: translateX(-1750px);
+    }
+
+    22.5% {
+        transform: translateX(-1750px);
+    }
+
+    24% {
+        transform: translateX(-2000px);
+    }
+
+    25.5% {
+        transform: translateX(-2000px);
+    }
+
+    27% {
+        transform: translateX(-2250px);
+    }
+
+    28.5% {
+        transform: translateX(-2250px);
+    }
+
+    30% {
+        transform: translateX(-2500px);
+    }
+
+    31.5% {
+        transform: translateX(-2500px);
+    }
+
+    33% {
+        transform: translateX(-2750px);
+    }
+
+    33% {
+        transform: translateX(-2750px);
+    }
+
+    34.5% {
+        transform: translateX(-2250px);
+    }
+
+    36% {
+        transform: translateX(-2250px);
+    }
+
+    37.5% {
+        transform: translateX(-2500px);
+    }
+
+    39% {
+        transform: translateX(-2500px);
+    }
+
+    40.5% {
+        transform: translateX(-2750px);
+    }
+
+    42% {
+        transform: translateX(-2750px);
+    }
+
+    43.5% {
+        transform: translateX(0);
+    }
+
+    45% {
+        transform: translateX(0);
+    }
+
+    46.5% {
+        transform: translateX(-250px);
+    }
+
+    48% {
+        transform: translateX(-250px);
+    }
+
+    49.5% {
+        transform: translateX(-500px);
+    }
+
+    51% {
+        transform: translateX(-500px);
+    }
+
+    52.5% {
+        transform: translateX(-750px);
+    }
+
+    10.5% {
+        transform: translateX(-750px);
+    }
+
+    12% {
+        transform: translateX(-1000px);
+    }
+
+    13.5% {
+        transform: translateX(-1000px);
+    }
+
+    15% {
+        transform: translateX(-1250px);
+    }
+
+    16.5% {
+        transform: translateX(-1250px);
+    }
+
+    18% {
+        transform: translateX(-1500px);
+    }
+
+    19.5% {
+        transform: translateX(-1500px);
+    }
+
+    21% {
+        transform: translateX(-1750px);
+    }
+
+    22.5% {
+        transform: translateX(-1750px);
+    }
+
+    24% {
+        transform: translateX(-2000px);
+    }
+
+    25.5% {
+        transform: translateX(-2000px);
+    }
+
+    27% {
+        transform: translateX(-2250px);
+    }
+
+    28.5% {
+        transform: translateX(-2250px);
+    }
+
+    30% {
+        transform: translateX(-2500px);
+    }
+
+    31.5% {
+        transform: translateX(-2500px);
+    }
+
+    33% {
+        transform: translateX(-2750px);
+    }
+
+    33% {
+        transform: translateX(-2750px);
+    }
+
+    27% {
+        transform: translateX(-2250px);
+    }
+
+    28.5% {
+        transform: translateX(-2250px);
+    }
+
+    30% {
+        transform: translateX(-2500px);
+    }
+
+    31.5% {
+        transform: translateX(-2500px);
+    }
+
+    33% {
+        transform: translateX(-2750px);
+    }
+
+    33% {
+        transform: translateX(-2750px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* ////////// CORPS - CV ////////// */
