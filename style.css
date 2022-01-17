@@ -507,7 +507,7 @@ header::after{
     align-items: center;
 }
 
-#blog .boite_quatre .gauche{
+#blog .boite_quatre .haut{
     margin: 25px;
     background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -516,12 +516,12 @@ header::after{
     padding: 15px;
 }
 
-#blog .boite_quatre .gauche .un{
+#blog .boite_quatre .haut .un{
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-#blog .boite_quatre .gauche .deux{
+#blog .boite_quatre .haut .deux{
     font-size: small;
 }
 
@@ -535,7 +535,7 @@ header::after{
 
 .slides{
     width: calc(250px * 32);
-    animation: défilement 64s infinite;
+    animation: défilement 192s infinite;
 }
 
 .slides img{
@@ -545,13 +545,13 @@ header::after{
 
 @keyframes défilement{
     0%{
-    transform: translateX(0);
+        transform: translateX(0);
     }
-    99%%{
-    transform: translateX(-8000px);
+    50%{
+        transform: translateX(-7750px);
     }
     100%{
-    transform: translateX(0);
+        transform: translateX(0);
     }
 }
 
