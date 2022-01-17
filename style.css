@@ -259,7 +259,7 @@ header::after{
     left: 60%;
 }
 
-#présentation .boite_un, #présentation .boite_deux, #présentation .boite_trois{
+#présentation .boite{
     margin: 25px;
     background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -268,12 +268,12 @@ header::after{
     padding: 15px;
 }
 
-#présentation .boite_un .un, #présentation .boite_deux .un, #présentation .boite_trois .un{
+#présentation .boite .un{
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-#présentation .boite_un .deux, #présentation .boite_deux .deux, #présentation .boite_trois .deux{
+#présentation .boite .deux{
     font-size: small;
 }
 
@@ -332,9 +332,10 @@ header::after{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-#blog .boite_un .bas .droite{
+#blog .boite_un .bas{
     width: 250px;
     height: 250px;
     background: url(img/cafe.jpg);
@@ -346,14 +347,15 @@ header::after{
     margin: 25px;
 }
 
-#blog .boite_un .bas{
+#blog .boite_un .haut{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
-#blog .boite_un .haut{
+#blog .boite_un .haut .gauche{
     background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     opacity: 0.75;
@@ -362,20 +364,20 @@ header::after{
     margin: 25px;
 }
 
-#blog .boite_un .haut .un{
+#blog .boite_un .haut .gauche .un{
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-#blog .boite_un .haut .deux{
+#blog .boite_un .haut .gauche .deux{
     font-size: small;
 }
 
-#blog .boite_un .bas .gauche{
+#blog .boite_un .haut .droite{
     margin: 25px;
 }
 
-#blog .boite_un .bas .gauche a{
+#blog .boite_un .haut .droite a{
     text-decoration: none;
     color: black;
     background-color: white;
@@ -386,7 +388,7 @@ header::after{
     transition: background-color 0.5s, color 0.5s;
 }
 
-#blog .boite_un .bas .gauche a:hover{
+#blog .boite_un .haut .droite a:hover{
     background-color: red;
     color: white;
 }
