@@ -282,22 +282,11 @@ header::after{
     position: absolute;
     content: '';
     background-color: black;
-    width: 45%;
-    height: 3px;
+    width: 75%;
+    height: 1.5px;
     border-radius: 10px;
     top: 0;
-    left: 10%;
-}
-
-#blog::after{
-    position: absolute;
-    content: '';
-    background-color: black;
-    width: 15%;
-    height: 3px;
-    border-radius: 10px;
-    top: 0;
-    left: 60%;
+    left: 12.5%;
 }
 
 #blog .intro{
@@ -564,22 +553,11 @@ header::after{
     position: absolute;
     content: '';
     background-color: black;
-    width: 45%;
-    height: 3px;
+    width: 75%;
+    height: 1.5px;
     border-radius: 10px;
     top: 0;
-    left: 10%;
-}
-
-#cv::after{
-    position: absolute;
-    content: '';
-    background-color: black;
-    width: 15%;
-    height: 3px;
-    border-radius: 10px;
-    top: 0;
-    left: 60%;
+    left: 12.5%;
 }
 
 #cv .boite_gauche{
@@ -653,22 +631,11 @@ header::after{
     position: absolute;
     content: '';
     background-color: black;
-    width: 45%;
-    height: 3px;
+    width: 75%;
+    height: 1.5px;
     border-radius: 10px;
     top: 0;
-    left: 10%;
-}
-
-#contact::after{
-    position: absolute;
-    content: '';
-    background-color: black;
-    width: 15%;
-    height: 3px;
-    border-radius: 10px;
-    top: 0;
-    left: 60%;
+    left: 12.5%;
 }
 
 .mail, .in, .insta{
