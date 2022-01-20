@@ -11,87 +11,91 @@
     font-family: 'Lora', serif;
 }
 
-/* ////////// HAUT DE PAGE ////////// */
+/* ////////// HEADER ////////// */
 
 header{
     position: fixed;
-    right: 0;
+    top: 0;
     left: 0;
+    right: 0;
+    width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    padding-left: 25px;
-    padding-right: 10px;
     background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
     z-index: 1;
 }
 
 header::after{
     position: absolute;
     content: '';
-    background-color: black;
     width: 75%;
-    height: 1.5px;
-    border-radius: 10px;
+    height: 3px;
+    background-color: black;
     bottom: 0;
     left: 12.5%;
 }
 
-.header_gauche{
+header .gauche{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.pdp{
+header .gauche .pdp{
+    width: 50px;
+    height: 50px;
     background: url(img/photo_profil.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
     border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    margin-left: 25px;
     cursor: pointer;
     transition: transform 1.5s;
 }
 
-.pdp:hover{
-    transform: rotate(360deg);
+header .gauche .pdp:hover{
+    transform: rotate(180deg);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
 }
 
-.titre{
-    margin-left: 15px;
-}
-
-.titre a{
+header .gauche .titre a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(to top, black 0px, black 1.5px,transparent 1.6px) no-repeat center bottom / 0% 100%;
+    margin-left: 15px;
+    background: linear-gradient(to top, black 0px, black 1.5px, transparent 1.6px) no-repeat center bottom / 0% 100%;
     transition: background-size 0.5s;
 }
 
-.titre a:hover{
+header .gauche .titre a:hover{
     background-size: 100% 100%;
 }
 
-.header_droite a{
+header .droite{
+    margin-right: 25px;
+}
+
+header .droite a{
+    font-size: small;
     text-decoration: none;
     color: black;
-    margin-right: 15px;
+    margin-left: 50px;
     transition: color 0.5s;
 }
 
-.header_droite a:hover{
+header .droite a:hover{
     color: red;
 }
 
-.header_droite_bis{
+header .droite_bis{
+    margin-right: 25px;
     display: none;
-    margin-right: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -100,16 +104,16 @@ header::after{
     display: none;
 }
 
-.burger{
+header .droite_bis .burger{
     display: flex;
-    width: 25px;
-    height: 25px;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 
-.burger span{
+header .droite_bis .burger span{
     position: relative;
     width: 25px;
     height: 3px;
@@ -118,59 +122,26 @@ header::after{
     transition: background-color 0.5s;
 }
 
-.burger span::before{
+header .droite_bis .burger span::before{
     position: absolute;
     content: '';
-    background-color: black;
     width: 25px;
     height: 3px;
-    border-radius: 10px;
     top: 6px;
+    border-radius: 10px;
+    background-color: black;
     transition: transform 0.5s;
 }
 
-.burger span::after{
+header .droite_bis .burger span::after{
     position: absolute;
     content: '';
-    background-color: black;
     width: 25px;
     height: 3px;
-    border-radius: 10px;
     top: -6px;
+    border-radius: 10px;
+    background-color: black;
     transition: transform 0.5s;
-}
-
-.menu{
-    display: flex;
-    position: fixed;
-    top: 10vh;
-    right: 12.5%;
-    width: 75%;
-    height: 0vh;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    opacity: 0.75;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    transition: height 0.5s, top 0.5s;
-}
-
-.menu .boite{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu .boite a{
-    display: none;
-    text-decoration: none;
-    color: transparent;
-    font-size: x-large;
-    transition: color 0.5s;
-}
-
-.menu .boite .un, .menu .boite .deux, .menu .boite .trois{
-    margin-bottom: 50px;
 }
 
 .checkbox:checked ~ .burger span{
@@ -187,342 +158,252 @@ header::after{
     top: 0;
 }
 
-.checkbox:checked ~ .menu{
-    height: 80vh;
-    top: 15vh;
-}
-
-.checkbox:checked ~ .menu .boite a{
-    display: flex;
-    color: black;
-}
-
-.checkbox:checked ~ .menu .boite a:hover{
-    color: red;
-}
-
-/* ////////// CORPS - ACCUEIL ////////// */
+/* ////////// ACCUEIL ////////// */
 
 .accueil{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.bienvenue{
-    font-size: 7vh;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-.portfolio{
-    font-size: 3vh;
-    font-weight: bold;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* ////////// CORPS - PRESENTATION ////////// */
-
-#présentation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#présentation::before{
-    position: absolute;
-    content: '';
-    background-color: black;
-    width: 75%;
-    height: 1.5px;
-    border-radius: 10px;
-    top: 0;
-    left: 12.5%;
-}
-
-#présentation .boite{
-    margin: 25px;
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-#présentation .boite .un{
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#présentation .boite .deux{
-    font-size: small;
-}
-
-/* ////////// CORPS - BLOG ////////// */
-
-#blog{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-#blog::before{
-    position: absolute;
-    content: '';
-    background-color: black;
-    width: 75%;
-    height: 1.5px;
-    border-radius: 10px;
-    top: 0;
-    left: 12.5%;
-}
-
-#blog .intro{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 25px;
-}
-
-#blog .intro .un{
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#blog .intro .deux{
-    font-size: small;
-}
-
-#blog .boite_un{
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#blog .boite_un .bas{
+.accueil .bas::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 25%;
+    height: 3px;
+    top: -15px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.accueil .bas::after{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 25%;
+    height: 3px;
+    bottom: -15px;
+    right: 0;
+    border-radius: 10px;
+}
+
+.accueil .haut{
+    position: relative;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+}
+
+.accueil .haut .un{
+    font-size: 3vh;
+}
+
+.accueil .haut .deux{
+    font-size: 9vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.accueil .haut .trois{
+    position: absolute;
+    font-size: 3vh;
+    right: 0;
+}
+
+.accueil .bas{
+    position: relative;
+    font-size: small;
+    font-weight: bold;
+    max-width: 75%;
+    text-align: center;
+}
+
+/* ////////// PARCOURS ////////// */
+
+#parcours{
+    position: relative;
+    height: 100vh;
+}
+
+#parcours::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 75%;
+    height: 3px;
+    left: 12.5%;
+    border-radius: 10px;
+}
+
+/* ////////// PASSIONS ////////// */
+
+#passions{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 25px;
+}
+
+#passions::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 75%;
+    height: 3px;
+    top: 0;
+    left: 12.5%;
+    border-radius: 10px;
+}
+
+#passions .boite_un{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    background-color: white;
+    opacity: 0.75;
+    margin: 25px;
+    padding: 15px;
+}
+
+#passions .boite_un .un{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    background-color: #583C87;
+}
+
+#passions .boite_un .deux{
+    font-size: small;
+}
+
+#passions .boite_deux{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#passions .boite_deux .cafe, #passions .boite_deux .velo, #passions .boite_deux .vin, #passions .boite_deux .biere{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     width: 250px;
     height: 250px;
+    padding: 15px;
+    margin: 25px;
+}
+
+#passions .boite_deux .cafe .un, #passions .boite_deux .velo .un, #passions .boite_deux .vin .un, #passions .boite_deux .biere .un{
+    font-size: large;
+    font-weight: bold;
+}
+
+#passions .boite_deux .cafe .deux, #passions .boite_deux .velo .deux, #passions .boite_deux .vin .deux, #passions .boite_deux .biere .deux{
+    font-size: small;
+    text-align: center;
+}
+
+#passions .boite_deux .cafe .photo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background: url(img/cafe.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
 }
 
-#blog .boite_un .haut{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+#passions .boite_deux .cafe .photo:hover{
+    opacity: 0.25;
+}
+
+#passions .boite_deux .velo .photo{
+    position: absolute;
+    top: 0;
     width: 100%;
-}
-
-#blog .boite_un .haut .gauche{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 25px;
-}
-
-#blog .boite_un .haut .gauche .un{
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#blog .boite_un .haut .gauche .deux{
-    font-size: small;
-}
-
-#blog .boite_un .haut .droite{
-    margin: 25px;
-}
-
-#blog .boite_un .haut .droite a{
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-#blog .boite_un .haut .droite a:hover{
-    background-color: red;
-    color: white;
-}
-
-#blog .boite_deux{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#blog .boite_deux .haut{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 25px;
-}
-
-#blog .boite_deux .haut .un{
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#blog .boite_deux .haut .deux{
-    font-size: small;
-}
-
-#blog .boite_deux .bas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#blog .boite_deux .bas .photo_un{
-    width: 250px;
-    height: 250px;
-    background: url(img/velo_route.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
-}
-
-#blog .boite_deux .bas .photo_deux{
-    width: 250px;
-    height: 250px;
+    height: 100%;
     background: url(img/velo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
 }
 
-#blog .boite_trois{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#passions .boite_deux .velo .photo:hover{
+    opacity: 0.25;
 }
 
-#blog .boite_trois .haut{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 25px;
-}
-
-#blog .boite_trois .haut .un{
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#blog .boite_trois .haut .deux{
-    font-size: small;
-}
-
-#blog .boite_trois .bas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#blog .boite_trois .bas .gauche{
-    width: 250px;
-    height: 250px;
+#passions .boite_deux .vin .photo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background: url(img/vin.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
 }
 
-#blog .boite_trois .bas .droite{
-    width: 250px;
-    height: 250px;
+#passions .boite_deux .vin .photo:hover{
+    opacity: 0.25;
+}
+
+#passions .boite_deux .biere .photo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background: url(img/biere.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
 }
 
-#blog .boite_quatre{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#blog .boite_quatre .haut{
-    margin: 25px;
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-#blog .boite_quatre .haut .un{
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#blog .boite_quatre .haut .deux{
-    font-size: small;
+#passions .boite_deux .biere .photo:hover{
+    opacity: 0.25;
 }
 
 .slider{
     overflow: hidden;
-    width: 250px;
-    margin: 25px auto;
+    width: 350px;
+    margin: 25px 50px 50px 50px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
 .slides{
-    width: calc(250px * 32);
+    width: calc(350px * 32);
     animation: défilement 192s infinite;
 }
 
 .slides img{
     float: left;
-    width: 250px;
+    width: 350px;
 }
 
 @keyframes défilement{
@@ -530,23 +411,24 @@ header::after{
         transform: translateX(0);
     }
     50%{
-        transform: translateX(-7750px);
+        transform: translateX(-10850px);
     }
     100%{
         transform: translateX(0);
     }
 }
 
-/* ////////// CORPS - CV ////////// */
+/* ////////// CV ////////// */
 
 #cv{
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
+    padding: 25px;
 }
 
 #cv::before{
@@ -554,68 +436,54 @@ header::after{
     content: '';
     background-color: black;
     width: 75%;
-    height: 1.5px;
-    border-radius: 10px;
+    height: 3px;
     top: 0;
     left: 12.5%;
-}
-
-#cv .boite_gauche{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#cv .boite_gauche .haut{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
     border-radius: 10px;
-    padding: 15px;
+}
+
+#cv .gauche{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    background-color: white;
+    opacity: 0.75;
     margin: 25px;
+    padding: 15px;
 }
 
-#cv .boite_gauche .un{
+#cv .gauche .un{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: large;
     font-weight: bold;
-    margin-bottom: 15px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    background-color: #FFACAC;
 }
 
-#cv .boite_gauche .deux{
+#cv .gauche .deux{
     font-size: small;
 }
 
-#cv .boite_gauche .bas{
+#cv a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid black;
     margin: 25px;
+    width: 25%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
 }
 
-#cv .boite_gauche .bas a{
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.75;
-    border-radius: 10px;
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-#cv .boite_gauche .bas a:hover{
-    background-color: red;
-    color: white;
-}
-
-#cv .boite_droite{
-    margin: 25px;
-}
-
-#cv iframe{
+#cv img{
     width: 100%;
-    height: auto;
-    aspect-ratio: 22.4/29.7;
 }
 
-/* ////////// CORPS - CONTACT ////////// */
+/* ////////// CONTACT ////////// */
 
 #contact{
     position: relative;
@@ -625,6 +493,7 @@ header::after{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 25px;
 }
 
 #contact::before{
@@ -632,188 +501,148 @@ header::after{
     content: '';
     background-color: black;
     width: 75%;
-    height: 1.5px;
-    border-radius: 10px;
+    height: 3px;
     top: 0;
     left: 12.5%;
-}
-
-.mail, .in, .insta{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 100px;
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    margin: 25px;
-    opacity: 0.75;
     border-radius: 10px;
 }
 
-.mail .un{
+#contact .mail, #contact .linkedin, #contact .insta{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    background-color: white;
+    opacity: 0.75;
+    margin: 25px;
+}
+
+#contact .mail .un, #contact .linkedin .un, #contact .insta .un{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    color: black;
     font-size: x-large;
-    top: -12.5px;
-    left: 75px;
+    text-decoration: none;
+    color: white;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.mail .un:hover{
-    color: white;
-    background-color: red;
-}
-
-.mail p{
-    position: relative;
-    font-weight: bold;
-    top: 45px;
-}
-
-.mail .deux{
-    position: absolute;
-    color: black;
-    text-decoration: none;
-    top: 70px;
-    transition: color 0.5s;
-    font-size: small;
-}
-
-.mail .deux:hover{
-    color: red;
-}
-
-.in .un{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
     top: -12.5px;
-    left: 75px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s;
 }
 
-.in .un:hover{
-    color: white;
+#contact .mail .un{
+    background-color: #E45A84;
+}
+
+#contact .linkedin .un{
+    background-color: #583C87;
+}
+
+#contact .insta .un{
+    background-color: #FFACAC;
+}
+
+#contact .mail .un:hover, #contact .linkedin .un:hover, #contact .insta .un:hover{
     background-color: red;
 }
 
-.in p{
-    position: relative;
-    font-weight: bold;
-    top: 45px;
-}
-
-.in .deux{
+#contact .mail p, #contact .linkedin p, #contact .insta p{
     position: absolute;
-    color: black;
-    text-decoration: none;
-    top: 70px;
-    transition: color 0.5s;
-    font-size: small;
+    bottom: 35px;
+    font-size: large;
+    font-weight: bold;
 }
 
-.in .deux:hover{
+#contact .mail .deux, #contact .linkedin .deux, #contact .insta .deux{
+    position: absolute;
+    bottom: 15px;
+    font-size: small;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+#contact .mail .deux:hover, #contact .linkedin .deux:hover, #contact .insta .deux:hover{
     color: red;
 }
 
-.insta .un{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
-    top: -12.5px;
-    left: 75px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.insta .un:hover{
-    color: white;
-    background-color: red;
-}
-
-.insta p{
-    position: relative;
-    font-weight: bold;
-    top: 45px;
-}
-
-.insta .deux{
-    position: absolute;
-    color: black;
-    text-decoration: none;
-    top: 70px;
-    transition: color 0.5s;
-    font-size: small;
-}
-
-.insta .deux:hover{
-    color: red;
-}
-
-/* ////////// BAS DE PAGE ////////// */
+/* ////////// FOOTER ////////// */
 
 footer{
     position: relative;
+    width: 100%;
     height: 5vh;
-    background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    font-size: small;
     font-weight: bold;
 }
 
 footer::before{
     position: absolute;
     content: '';
-    background-color: black;
     width: 75%;
-    height: 1.5px;
-    border-radius: 10px;
+    height: 3px;
+    background-color: black;
     top: 0;
     left: 12.5%;
 }
 
-footer p{
-    font-size: small;
+footer .gauche{
+    margin-left: 25px;
+}
+
+footer .droite{
+    margin-right: 25px;
+}
+
+footer .droite a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+footer .droite a:hover{
+    color: red;
 }
 
 /* ////////// RESPONSIVE ////////// */
 
-@media screen and (max-width: 750px){
-    .header_droite{
+@media screen and (max-width: 850px){
+    header .droite{
         display: none;
     }
 
-    .header_droite_bis{
+    header .droite_bis{
         display: flex;
+    }
+
+    .accueil .haut .un{
+        font-size: medium;
+    }
+    
+    .accueil .haut .deux{
+        font-size: 5vh;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .accueil .haut .trois{
+        position: absolute;
+        font-size: medium;
+        right: 0;
     }
 }
 
