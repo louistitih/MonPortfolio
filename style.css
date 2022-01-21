@@ -398,6 +398,7 @@ header .droite_bis .burger span::after{
 
 #passions .slider .slides{
     width: calc(250px * 32);
+    border-radius: 10px;
     animation: défilement 192s infinite;
 }
 
