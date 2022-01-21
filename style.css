@@ -388,7 +388,7 @@ header .droite_bis .burger span::after{
     opacity: 0.25;
 }
 
-.slider{
+#passions .slider{
     overflow: hidden;
     width: 250px;
     margin: 25px;
@@ -396,12 +396,12 @@ header .droite_bis .burger span::after{
     border-radius: 10px;
 }
 
-.slides{
+#passions .slider .slides{
     width: calc(250px * 32);
     animation: défilement 192s infinite;
 }
 
-.slides img{
+#passions .slider .slides img{
     float: left;
     width: 250px;
 }
