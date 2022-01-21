@@ -185,7 +185,7 @@ header .droite_bis .burger span::after{
     content: '';
     background-color: black;
     width: 25%;
-    height: 3px;
+    height: 1.5px;
     bottom: -15px;
     right: 0;
     border-radius: 10px;
@@ -390,20 +390,20 @@ header .droite_bis .burger span::after{
 
 .slider{
     overflow: hidden;
-    width: 300px;
+    width: 250px;
     margin: 25px 50px 50px 50px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
 .slides{
-    width: calc(300px * 32);
+    width: calc(250px * 32);
     animation: défilement 192s infinite;
 }
 
 .slides img{
     float: left;
-    width: 300px;
+    width: 250px;
 }
 
 @keyframes défilement{
@@ -473,7 +473,6 @@ header .droite_bis .burger span::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1.5px solid black;
     margin: 25px;
     width: 25%;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
