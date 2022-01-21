@@ -404,6 +404,7 @@ header .droite_bis .burger span::after{
 #passions .slider .slides img{
     float: left;
     width: 250px;
+    border-radius: 10px;
 }
 
 @keyframes défilement{
