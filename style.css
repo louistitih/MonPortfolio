@@ -391,7 +391,7 @@ header .droite_bis .burger span::after{
 .slider{
     overflow: hidden;
     width: 250px;
-    margin: 25px 50px 50px 50px;
+    margin: 25px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
@@ -411,7 +411,7 @@ header .droite_bis .burger span::after{
         transform: translateX(0);
     }
     50%{
-        transform: translateX(-9300px);
+        transform: translateX(-7750px);
     }
     100%{
         transform: translateX(0);
