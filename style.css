@@ -258,6 +258,16 @@ header .droite_bis .burger span::after{
     text-align: center;
 }
 
+.accueil .bas a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+.accueil .bas a:hover{
+    color: red;
+}
+
 /* ////////// PARCOURS ////////// */
 
 #parcours{
