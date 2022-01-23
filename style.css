@@ -158,6 +158,44 @@ header .droite_bis .burger span::after{
     top: 0;
 }
 
+.menu{
+    position: fixed;
+    top: 10vh;
+    left: 12.5%;
+    width: 75%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    opacity: 0.75;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    transition: transform 0.5s, height 0.5s;
+}
+
+.menu a{
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    transition: color 0.5s;
+}
+
+.checkbox:checked ~ .menu{
+    transform: translateY(5vh);
+    height: 80vh;
+}
+
+.checkbox:checked ~ .menu a{
+    display: flex;
+}
+
+.checkbox:checked ~ .menu a:hover{
+    color: red;
+}
+
 /* ////////// ACCUEIL ////////// */
 
 .accueil{
@@ -316,6 +354,7 @@ header .droite_bis .burger span::after{
 
 .lycee_deux .texte p, .iut_deux .texte p, .jp_deux .texte p, .ubs_deux .texte p, .co_deux .texte p, .np_deux .texte p{
     font-size: small;
+    text-align: center;
     padding: 15px;
     background-color: white;
     opacity: 0;
@@ -351,7 +390,7 @@ header .droite_bis .burger span::after{
     position: absolute;
     width: 50px;
     height: 50px;
-    background: url(img/lannion.jpg);
+    background: url(img/iut.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
