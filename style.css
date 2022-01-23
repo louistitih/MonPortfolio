@@ -281,6 +281,182 @@ header .droite_bis .burger span::after{
     font-size: small;
 }
 
+#parcours .timeline{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px;
+}
+
+#parcours .timeline::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 3px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+}
+
+#parcours .timeline .lycee, #parcours .timeline .iut, #parcours .timeline .jp, #parcours .timeline .ubs, #parcours .timeline .co, #parcours .timeline .np{
+    display: none;
+}
+
+#parcours .timeline .lycee_deux, #parcours .timeline .iut_deux, #parcours .timeline .jp_deux, #parcours .timeline .ubs_deux, #parcours .timeline .co_deux, #parcours .timeline .np_deux{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.lycee_deux .texte p, .iut_deux .texte p, .jp_deux .texte p, .ubs_deux .texte p, .co_deux .texte p, .np_deux .texte p{
+    font-size: small;
+    padding: 15px;
+    background-color: white;
+    opacity: 0;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
+}
+
+#parcours .timeline .lycee_deux .photo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(img/lycee.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
+}
+
+.lycee:checked ~ .lycee_deux .photo{
+    opacity: 0;
+}
+
+.lycee:checked ~ .lycee_deux .texte p{
+    opacity: 1;
+}
+
+#parcours .timeline .iut_deux .photo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(img/lannion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
+}
+
+.iut:checked ~ .iut_deux .photo{
+    opacity: 0;
+}
+
+.iut:checked ~ .iut_deux .texte p{
+    opacity: 1;
+}
+
+#parcours .timeline .jp_deux .photo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(img/jp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
+}
+
+.jp:checked ~ .jp_deux .photo{
+    opacity: 0;
+}
+
+.jp:checked ~ .jp_deux .texte p{
+    opacity: 1;
+}
+
+#parcours .timeline .ubs_deux .photo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(img/ubs.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
+}
+
+.ubs:checked ~ .ubs_deux .photo{
+    opacity: 0;
+}
+
+.ubs:checked ~ .ubs_deux .texte p{
+    opacity: 1;
+}
+
+#parcours .timeline .co_deux .photo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(img/co.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
+}
+
+.co:checked ~ .co_deux .photo{
+    opacity: 0;
+}
+
+.co:checked ~ .co_deux .texte p{
+    opacity: 1;
+}
+
+#parcours .timeline .np_deux .photo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(img/np.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    transition: opacity 0.5s;
+}
+
+.np:checked ~ .np_deux .photo{
+    opacity: 0;
+}
+
+.np:checked ~ .np_deux .texte p{
+    opacity: 1;
+}
+
 /* ////////// PASSIONS ////////// */
 
 #passions{
@@ -448,9 +624,7 @@ header .droite_bis .burger span::after{
     overflow: hidden;
     width: 250px;
     margin: 25px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);           
     border-radius: 10px;
 }
 
