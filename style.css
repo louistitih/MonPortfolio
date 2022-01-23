@@ -659,13 +659,24 @@ header .droite_bis .burger span::after{
     opacity: 0.25;
 }
 
+.tableur{
+    margin: 25px;
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+    background-color: white;
+    opacity: 0.75;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
 .lien{
     margin: 25px;
     padding: 15px;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: small;
-    background-color: white;
+    background-color: red;
     opacity: 0.75;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
     border-radius: 10px;
@@ -673,8 +684,8 @@ header .droite_bis .burger span::after{
 }
 
 .lien:hover{
-    color: white;
-    background-color: red;
+    color: black;
+    background-color: white;
 }
 
 .slider{
