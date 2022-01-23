@@ -668,7 +668,7 @@ header .droite_bis .burger span::after{
 }
 
 .slides{
-    width: calc(250px * 32);
+    width: calc(250px * 34);
     animation: défilement 192s infinite;
 }
 
@@ -682,7 +682,7 @@ header .droite_bis .burger span::after{
         transform: translateX(0);
     }
     50%{
-        transform: translateX(-7750px);
+        transform: translateX(-8250px);
     }
     100%{
         transform: translateX(0);
