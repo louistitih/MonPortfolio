@@ -28,9 +28,9 @@
             </div>
         </div>
         <div class="droite">
-            <a href="#parcours">Mon parcours</a>
-            <a href="#passions">Mes hobbies et projet</a>
-            <a href="#cv">Mon CV</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#passions">Projets et loisirs</a>
+            <a href="#cv">CV</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="droite_bis">
@@ -39,9 +39,9 @@
                 <span></span>
             </label>
             <div class="menu">
-                <a href="#parcours">Mon parcours</a>
-                <a href="#passions">Mes hobbies et projets</a>
-                <a href="#cv">Mon CV</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#passions">Projets et loisirs</a>
+                <a href="#cv">CV</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -61,8 +61,6 @@
                 <br><br>
                 Ce site est l'aboutissement de plusieurs semaines de travail sur mon temps libre, passées à apprendre les languages de programmation depuis 0.
                 <br><br>
-                Versions à venir : mode clair/sombre et bouton français/anglais 
-                <br><br>
                 Crédit à <a href="https://codepen.io/Mamboleoo/pen/BxMQYQ">Louis Hoebregts</a> pour le fond animé
             </p>
         </div>
@@ -72,7 +70,7 @@
 
     <div id="parcours">
         <div class="boite_un">
-            <p class="un">Mon parcours</p>
+            <p class="un">Parcours</p>
             <p class="deux">Voici un bref aperçu de mon parcours étudiant et professionnel, cliquez pour en apprendre plus :</p>
         </div>
         <div class="timeline">
@@ -125,10 +123,40 @@
 
     <div id="passions">
         <div class="boite_un">
-            <p class="un">Mes hobbies et projets</p>
-            <p class="deux">Dégustations, sports, passe temps et projets découvrez tout ce que je fais au fil de cette rubrique :</p>
+            <p class="un">Projets et loisirs</p>
+            <p class="deux">Projets, dégustations, sports et passe temps, découvrez tout ce que je fais au fil de cette rubrique :</p>
         </div>
         <div class="boite_deux">
+            <input class="projets" id="projets" type="checkbox">
+            <label class="projets_deux" for="projets">
+                <p class="un">Mes projets</p>
+                <p class="deux">Liste non exhaustive de ce que je fais sur mon temps libres avec mes propres moyen techniques et financiers : En cours</p>
+                <div class="photo"></div>
+            </label>
+        </div>
+        <div class="boite_trois">
+            <input class="velo" id="velo" type="checkbox">
+            <label class="velo_deux" for="velo">
+                <p class="un">Vélo</p>
+                <p class="deux">Pratiquant le vélo de route, c'est un sport donnant une grande liberté pour découvrir les environs. J'ai notamment l'occasion de faire quelques sorties de groupes avec l'équipe du magasin Cycles Chedaleux Caudan. Je suis aussi fan des déplacements à vélo, j'ai donc rénové intégralement un vieux peugeot des années 80.</p>
+                <div class="photo"></div>
+            </label>
+            <input class="escalade" id="escalade" type="checkbox">
+            <label class="escalade_deux" for="escalade">
+                <p class="un">Escalade en bloc</p>
+                <p class="deux">Sport secondaire pour moi, j'apprécie le côté physique et ludique que je retrouve dans ce sport. Parfait pour rester en forme l'hiver quand pédaler devient plus compliqué, il me permet également de me diversifier dans ma pratique sportive.</p>
+                <div class="photo"></div>
+            </label>
+        </div>
+        <div class="boite_quatre">
+            <input class="rubiks" id="rubiks" type="checkbox">
+            <label class="rubiks_deux" for="rubiks">
+                <p class="un">Rubik's cube</p>
+                <p class="deux">Rien de plus qu'un passe temps au départ, j'ai fini par apprendre des méthodes plus rapides pour le résoudre. J'utilise actuellement la méthode Fridrich simplifiée avec l'apprentissage d'une vingtaine d'algorithmes et de nombreux automatismes. Record actuel : 24 secondes</p>
+                <div class="photo"></div>
+            </label>
+        </div>
+        <div class="boite_cinq">
             <input class="cafe" id="cafe" type="checkbox">
             <label class="cafe_deux" for="cafe">
                 <p class="un">Café de spécialité</p>
@@ -147,68 +175,49 @@
                 <p class="deux">Second centre d'intérêt découlant du café, c'est un univers étonnant et plein de préjugés permettant de découvrir des choses inatendues avec plus de surprise.</p>
                 <div class="photo"></div>
             </label>
-            <input class="velo" id="velo" type="checkbox">
-            <label class="velo_deux" for="velo">
-                <p class="un">Vélo</p>
-                <p class="deux">Pratiquant le vélo de route, c'est un sport donnant une grande liberté pour découvrir les environs. J'ai notamment l'occasion de faire quelques sorties de groupes avec l'équipe du magasin Cycles Chedaleux Caudan. Je suis aussi fan des déplacements à vélo, j'ai donc rénové intégralement un vieux peugeot des années 80.</p>
-                <div class="photo"></div>
-            </label>
-            <input class="escalade" id="escalade" type="checkbox">
-            <label class="escalade_deux" for="escalade">
-                <p class="un">Escalade en bloc</p>
-                <p class="deux">Sport secondaire pour moi, j'apprécie le côté physique et ludique que je retrouve dans ce sport. Parfait pour rester en forme l'hiver quand pédaler devient plus compliqué, il me permet également de me diversifier dans ma pratique sportive.</p>
-                <div class="photo"></div>
-            </label>
-            <input class="rubiks" id="rubiks" type="checkbox">
-            <label class="rubiks_deux" for="rubiks">
-                <p class="un">Rubik's cube</p>
-                <p class="deux">Rien de plus qu'un passe temps au départ, j'ai fini par apprendre des méthodes plus rapides pour le résoudre. J'utilise actuellement la méthode Fridrich simplifiée avec l'apprentissage d'une vingtaine d'algorithmes et de nombreux automatismes. Record actuel : 24 secondes</p>
-                <div class="photo"></div>
-            </label>
-            <input class="projets" id="projets" type="checkbox">
-            <label class="projets_deux" for="projets">
-                <p class="un">Mes projets</p>
-                <p class="deux">Liste non exhaustive de ce que je fais sur mon temps libres avec mes propres moyen techniques et financiers : En cours</p>
-                <div class="photo"></div>
-            </label>
-        </div>
-        <div class="slider">
-            <div class="slides">
-                <img src="img/1.jpg" alt="1">
-                <img src="img/2.jpg" alt="2">
-                <img src="img/3.jpg" alt="3">
-                <img src="img/4.jpg" alt="4">
-                <img src="img/5.jpg" alt="5">
-                <img src="img/6.jpg" alt="6">
-                <img src="img/7.jpg" alt="7">
-                <img src="img/8.jpg" alt="8">
-                <img src="img/9.jpg" alt="9">
-                <img src="img/10.jpg" alt="10">
-                <img src="img/11.jpg" alt="11">
-                <img src="img/12.jpg" alt="12">
-                <img src="img/13.jpg" alt="13">
-                <img src="img/14.jpg" alt="14">
-                <img src="img/15.jpg" alt="15">
-                <img src="img/16.jpg" alt="16">
-                <img src="img/17.jpg" alt="17">
-                <img src="img/18.jpg" alt="18">
-                <img src="img/19.jpg" alt="19">
-                <img src="img/20.jpg" alt="20">
-                <img src="img/20,5.jpg" alt="20,5">
-                <img src="img/21.jpg" alt="21">
-                <img src="img/22.jpg" alt="22">
-                <img src="img/23.jpg" alt="23">
-                <img src="img/24.jpg" alt="24">
-                <img src="img/25.jpg" alt="25">
-                <img src="img/26.jpg" alt="26">
-                <img src="img/27.jpg" alt="27">
-                <img src="img/28.jpg" alt="28">
-                <img src="img/29.jpg" alt="29">
-                <img src="img/30.jpg" alt="30">
-                <img src="img/31.jpg" alt="31">
-                <img src="img/32.jpg" alt="32">
-                <img src="img/33.jpg" alt="33">
-                <img src="img/34.jpg" alt="34">
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/1.jpg" alt="1">
+                    <img src="img/2.jpg" alt="2">
+                    <img src="img/3.jpg" alt="3">
+                    <img src="img/4.jpg" alt="4">
+                    <img src="img/5.jpg" alt="5">
+                    <img src="img/6.jpg" alt="6">
+                    <img src="img/7.jpg" alt="7">
+                    <img src="img/8.jpg" alt="8">
+                    <img src="img/9.jpg" alt="9">
+                    <img src="img/10.jpg" alt="10">
+                    <img src="img/11.jpg" alt="11">
+                    <img src="img/12.jpg" alt="12">
+                    <img src="img/13.jpg" alt="13">
+                    <img src="img/14.jpg" alt="14">
+                    <img src="img/15.jpg" alt="15">
+                    <img src="img/16.jpg" alt="16">
+                    <img src="img/17.jpg" alt="17">
+                    <img src="img/18.jpg" alt="18">
+                    <img src="img/19.jpg" alt="19">
+                    <img src="img/20.jpg" alt="20">
+                    <img src="img/20,5.jpg" alt="20,5">
+                    <img src="img/21.jpg" alt="21">
+                    <img src="img/22.jpg" alt="22">
+                    <img src="img/23.jpg" alt="23">
+                    <img src="img/24.jpg" alt="24">
+                    <img src="img/25.jpg" alt="25">
+                    <img src="img/26.jpg" alt="26">
+                    <img src="img/27.jpg" alt="27">
+                    <img src="img/28.jpg" alt="28">
+                    <img src="img/29.jpg" alt="29">
+                    <img src="img/30.jpg" alt="30">
+                    <img src="img/31.jpg" alt="31">
+                    <img src="img/32.jpg" alt="32">
+                    <img src="img/33.jpg" alt="33">
+                    <img src="img/34.jpg" alt="34">
+                    <img src="img/35.jpg" alt="35">
+                    <img src="img/36.jpg" alt="36">
+                    <img src="img/37.jpg" alt="37">
+                    <img src="img/38.jpg" alt="38">
+                    <img src="img/39.jpg" alt="39">
+                </div>
             </div>
         </div>
     </div>
@@ -217,7 +226,7 @@
 
     <div id="cv">
         <div class="gauche">
-            <p class="un">Mon CV</p>
+            <p class="un">CV</p>
             <p class="deux">Si ce n'est pas encore fait, consultez mon CV en cliquant dessus :</p>
         </div>
         <a href="https://drive.google.com/file/d/1_EDCuvZ_LMt4BWt-lurv0D4HzQack4GP/view?usp=sharing"><img src="img/cv.png" alt=""></a>
