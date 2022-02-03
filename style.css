@@ -567,14 +567,14 @@ header .droite_bis .burger span::after{
     font-size: small;
 }
 
-#passions .boite_deux, #passions .boite_trois, #passions .boite_quatre, #passions .boite_cinq{
+#passions .boite_quatre, #passions .boite_cinq, #passions .boite_deux, #passions .boite_trois{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#passions .boite_cinq .cafe_deux, #passions .boite_trois .velo_deux, #passions .boite_cinq .vin_deux, #passions .boite_cinq .biere_deux, #passions .boite_trois .escalade_deux, #passions .boite_quatre .rubiks_deux, #passions .boite_deux .projets_deux{
+#passions .boite_cinq .cafe_deux, #passions .boite_trois .velo_deux, #passions .boite_cinq .vin_deux, #passions .boite_cinq .biere_deux, #passions .boite_trois .escalade_deux, #passions .boite_quatre .rubiks_deux, #passions .boite_cinq .vin_deux, #passions .boite_cinq .biere_deux, #passions .boite_trois .escalade_deux, #passions .boite_deux .projets_deux{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -757,7 +757,7 @@ header .droite_bis .burger span::after{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 25px;
@@ -1015,7 +1015,7 @@ footer .droite a:hover{
     left: 0;
     background: #ffffff;
     overflow: hidden;
-    z-index: -1;
+    z-index: -2;
 }
 
 .background span {
