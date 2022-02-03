@@ -574,27 +574,30 @@ header .droite_bis .burger span::after{
     align-items: center;
 }
 
-#passions .boite_cinq .cafe_deux, #passions .boite_trois .velo_deux, #passions .boite_cinq .vin_deux, #passions .boite_cinq .biere_deux, #passions .boite_trois .escalade_deux, #passions .boite_quatre .rubiks_deux, #passions .boite_cinq .vin_deux, #passions .boite_cinq .biere_deux, #passions .boite_trois .escalade_deux, #passions .boite_deux .projets_deux{
+.cafe_deux, .velo_deux, .vin_deux, .biere_deux, .escalade_deux, .rubiks_deux, .projets_deux{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 125px;
+    height: 125px;
     padding: 15px;
     margin: 25px;
     cursor: pointer;
+    transition: width 0.5s, height 0.5s;
 }
 
 #passions .boite_cinq .cafe_deux .un, #passions .boite_trois .velo_deux .un, #passions .boite_cinq .vin_deux .un, #passions .boite_cinq .biere_deux .un, #passions .boite_trois .escalade_deux .un, #passions .boite_quatre .rubiks_deux .un, #passions .boite_deux .projets_deux .un{
     font-size: large;
     font-weight: bold;
+    overflow: hidden;
 }
 
 #passions .boite_cinq .cafe_deux .deux, #passions .boite_trois .velo_deux .deux, #passions .boite_cinq .vin_deux .deux, #passions .boite_cinq .biere_deux .deux, #passions .boite_trois .escalade_deux .deux, #passions .boite_quatre .rubiks_deux .deux, #passions .boite_deux .projets_deux .deux{
     font-size: small;
     text-align: center;
+    overflow: hidden;
 }
 
 .cafe, .velo, .vin, .biere, .escalade, .rubiks, .projets{
@@ -614,6 +617,11 @@ header .droite_bis .burger span::after{
     transition: opacity 0.5s;
 }
 
+.cafe:checked ~ .cafe_deux{
+    width: 250px;
+    height: 250px;
+}
+
 .cafe:checked ~ .cafe_deux .photo{
     opacity: 0.25;
 }
@@ -629,6 +637,11 @@ header .droite_bis .burger span::after{
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
     transition: opacity 0.5s;
+}
+
+.velo:checked ~ .velo_deux{
+    width: 250px;
+    height: 250px;
 }
 
 .velo:checked ~ .velo_deux .photo{
@@ -648,6 +661,11 @@ header .droite_bis .burger span::after{
     transition: opacity 0.5s;
 }
 
+.vin:checked ~ .vin_deux{
+    width: 250px;
+    height: 250px;
+}
+
 .vin:checked ~ .vin_deux .photo{
     opacity: 0.25;
 }
@@ -663,6 +681,11 @@ header .droite_bis .burger span::after{
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
     transition: opacity 0.5s;
+}
+
+.biere:checked ~ .biere_deux{
+    width: 250px;
+    height: 250px;
 }
 
 .biere:checked ~ .biere_deux .photo{
@@ -682,6 +705,11 @@ header .droite_bis .burger span::after{
     transition: opacity 0.5s;
 }
 
+.escalade:checked ~ .escalade_deux{
+    width: 250px;
+    height: 250px;
+}
+
 .escalade:checked ~ .escalade_deux .photo{
     opacity: 0.25;
 }
@@ -699,6 +727,11 @@ header .droite_bis .burger span::after{
     transition: opacity 0.5s;
 }
 
+.rubiks:checked ~ .rubiks_deux{
+    width: 250px;
+    height: 250px;
+}
+
 .rubiks:checked ~ .rubiks_deux .photo{
     opacity: 0.25;
 }
@@ -714,6 +747,11 @@ header .droite_bis .burger span::after{
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
     transition: opacity 0.5s;
+}
+
+.projets:checked ~ .projets_deux{
+    width: 250px;
+    height: 250px;
 }
 
 .projets:checked ~ .projets_deux .photo{
