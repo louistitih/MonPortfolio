@@ -250,7 +250,7 @@ header .droite_bis .burger span::after{
     right: 0;
 }
 
-/* .accueil .bas{
+.accueil .bas{
     position: relative;
     font-size: small;
     font-weight: bold;
@@ -266,7 +266,7 @@ header .droite_bis .burger span::after{
 
 .accueil .bas a:hover{
     color: red;
-} */
+}
 
 /* ////////// PARCOURS ////////// */
 
