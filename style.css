@@ -236,9 +236,10 @@ header .droite_bis .burger span::after{
     display: flex;
     align-items: center;
     height: 25px;
-    overflow: hidden;
+    overflow-y: scroll;
     cursor: pointer;
     transition: height 0.5s;
+    border: 1px solid black;
 }
 
 .propos_deux .un{
@@ -262,7 +263,7 @@ header .droite_bis .burger span::after{
 }
 
 .propos:checked ~ .propos_deux{
-    height: 50vh;
+    height: 250px;
 }
 
 .propos:checked ~ .propos_deux .un{
