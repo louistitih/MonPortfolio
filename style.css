@@ -277,6 +277,7 @@ header .droite_bis .burger span::after{
     align-items: center;
     height: 25px;
     overflow: hidden;
+    cursor: pointer;
     transition: height 0.5s;
 }
 
