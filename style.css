@@ -207,28 +207,6 @@ header .droite_bis .burger span::after{
     align-items: center;
 }
 
-/* .accueil .bas::before{
-    position: absolute;
-    content: '';
-    background-color: black;
-    width: 25%;
-    height: 1.5px;
-    top: -15px;
-    left: 0;
-    border-radius: 10px;
-}
-
-.accueil .bas::after{
-    position: absolute;
-    content: '';
-    background-color: black;
-    width: 25%;
-    height: 1.5px;
-    bottom: -15px;
-    right: 0;
-    border-radius: 10px;
-} */
-
 .accueil .haut{
     position: relative;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
@@ -249,24 +227,6 @@ header .droite_bis .burger span::after{
     font-size: 3vh;
     right: 0;
 }
-
-/* .accueil .bas{
-    position: relative;
-    font-size: small;
-    font-weight: bold;
-    max-width: 75%;
-    text-align: center;
-}
-
-.accueil .bas a{
-    text-decoration: none;
-    color: black;
-    transition: color 0.5s;
-}
-
-.accueil .bas a:hover{
-    color: red;
-} */
 
 .propos{
     display: none;
