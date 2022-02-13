@@ -262,7 +262,7 @@ header .droite_bis .burger span::after{
 }
 
 .propos:checked ~ .propos_deux{
-    height: 30vh;
+    height: 50vh;
 }
 
 .propos:checked ~ .propos_deux .un{
