@@ -751,7 +751,7 @@ header .droite_bis .burger span::after{
 
 .projets:checked ~ .projets_deux{
     width: 250px;
-    height: 750px;
+    height: 800px;
 }
 
 .projets:checked ~ .projets_deux .photo{
