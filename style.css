@@ -207,7 +207,7 @@ header .droite_bis .burger span::after{
     align-items: center;
 }
 
-.accueil .haut{
+.haut{
     position: relative;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
 }
@@ -263,7 +263,6 @@ header .droite_bis .burger span::after{
 
 .propos:checked ~ .haut{
     display: none;
-    height: 0px;
 }
 
 .propos:checked ~ .propos_deux{
