@@ -361,11 +361,11 @@ header .droite_bis .burger span::after{
     box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
 }
 
-#parcours .timeline .lycee, #parcours .timeline .iut, #parcours .timeline .jp, #parcours .timeline .ubs, #parcours .timeline .co, #parcours .timeline .np{
+#parcours .timeline .lycee, #parcours .timeline .iut, #parcours .timeline .jp, #parcours .timeline .ubs, #parcours .timeline .co, #parcours .timeline .np, #parcours .timeline .pmir{
     display: none;
 }
 
-#parcours .timeline .lycee_deux, #parcours .timeline .iut_deux, #parcours .timeline .jp_deux, #parcours .timeline .ubs_deux, #parcours .timeline .co_deux, #parcours .timeline .np_deux{
+#parcours .timeline .lycee_deux, #parcours .timeline .iut_deux, #parcours .timeline .jp_deux, #parcours .timeline .ubs_deux, #parcours .timeline .co_deux, #parcours .timeline .np_deux, #parcours .timeline .pmir_deux{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -375,7 +375,7 @@ header .droite_bis .burger span::after{
     margin: 25px;
 }
 
-.lycee_deux .texte p, .iut_deux .texte p, .jp_deux .texte p, .ubs_deux .texte p, .co_deux .texte p, .np_deux .texte p{
+.lycee_deux .texte p, .iut_deux .texte p, .jp_deux .texte p, .ubs_deux .texte p, .co_deux .texte p, .np_deux .texte p, .pmir_deux .texte p{
     font-size: small;
     text-align: center;
     padding: 15px;
@@ -503,6 +503,26 @@ header .droite_bis .burger span::after{
 }
 
 .np:checked ~ .np_deux .texte p{
+    display: flex;
+}
+
+#parcours .timeline .pmir_deux .photo{
+    width: 50px;
+    height: 50px;
+    background: url(img/marine.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+}
+
+.pmir:checked ~ .pmir_deux .photo{
+    display: none;
+}
+
+.pmir:checked ~ .pmir_deux .texte p{
     display: flex;
 }
 
