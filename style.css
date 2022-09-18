@@ -1035,10 +1035,9 @@ header .droite_bis .burger span::after{
 /* ////////// FOOTER ////////// */
 
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
+    bottom: -5vh;
+    width: 104%;
     height: 5vh;
     display: flex;
     justify-content: space-between;
